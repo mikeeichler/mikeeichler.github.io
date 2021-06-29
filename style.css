@@ -1,0 +1,61 @@
+body {
+    background-color: darkgray;
+    font-family:'Helvetica';
+    color: red;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+    /*
+        at 1000px, the list items wrap to second lines,
+        time to stack the columns into rows
+    */
+    /*
+        on larger screens I want the header and the footer
+        to be centered, but on smaller screens I want them
+        left-aligned
+    */
+    .flex-container {
+        flex-direction: row;
+    }
+    .top-bottom {
+        text-align: center;
+    }
+
+}
+
+/* 
+    order the columns/rows in a different order
+    from how they are in the html
+*/
+#experience {
+    order: -1;
+}
+
+#skills {
+    order: 1;
+}
+
+#education {
+    order: 0;
+}
+
+/* 
+    these were used for testing only
+    #experience {
+        background-color: orange;
+    }
+
+    #skills {
+        background-color: white;
+    }
+
+    #education {
+        background-color: green;
+    }
+*/
