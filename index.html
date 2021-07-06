@@ -4,50 +4,70 @@
         <meta charset="UTF-8"> 
         <link rel="stylesheet" href="style.css"> <!-- import the css-->
         <title>Mike Eichler CV</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
-        <div class="top-bottom"> 
-          <h1>Mike Eichler</h1>
-          <h3>Dublin, Ireland</h3>
-        </div>
+        <div class="container">
+            <div class="top-bottom"> 
+                <h1>Mike Eichler</h1>
+                <h3>Dublin, Ireland</h3>
+            </div>
 
-        <div class="flex-container">
-            <!--
-                the flex-container class holds the divs that should responsively
-                change from rows to columns
-            -->
-            <div id="skills" class="col">
-                <!--
-                    the col class has the various columns/rows.
-                    ids are used for ordering
-                -->
-                <h2>Skills</h2>
-                <ul>
-                    <li>Linux</li>
-                    <li>Python</li>
-                </ul>
+            <h3>Experience</h3>
+            <!-- Header vanishes if screen too small -->
+            <div id="header">
+                <div class="row">
+                    <div class="col-lg-2 font-weight-bold">Duration</div>
+                    <div class="col-lg-2 font-weight-bold">Employer</div>
+                    <div class="col-lg-8 font-weight-bold">Position</div>
+                </div>
             </div>
-            <div id="experience" class="col">
-                <h2>Experience</h2>
-                <ul>
-                    <li>2020 - current: A job</li>
-                    <li>2017 - 2020: A job</li>
-                    <li>2016 - 2017: A job</li>
-                    <li>2015 - 2016: A job</li>
-                    <li>2014 - 2015: A job</li>
-                </ul>
+            <div class="row">
+                <!-- Label will apper on small screens with stacked layouts -->
+                <div class="col-lg-2"><span class="font-weight-bold"  id="header_label">Duration: </span>2020-2021</div>
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Employer: </span>Company 2</div>
+                <div class="col-lg-8"><span class="font-weight-bold" id="header_label">Position: </span>Chief Engineer</div>
             </div>
-            <div id="education" class="col">
-                <h2>Education</h2>
-                <ul>
-                    <li>A course</li>
-                    <li>2001: A course</li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Duration: </span>2015-2020</div>
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Employer: </span>Company 2</div>
+                <div class="col-lg-8"><span class="font-weight-bold" id="header_label">Position: </span>Engineer</div>
             </div>
-        </div>
-
-        <div class="top-bottom">
-            <small>©2021 Mike Eichler</small>
+            <div class="row">
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Duration: </span>2010-2015</div>
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Employer: </span>Company 1</div>
+                <div class="col-lg-8"><span class="font-weight-bold" id="header_label">Position: </span>Clerk</div>
+            </div>
+            <h3>Education</h3>
+            <div id="header">
+                <div class="row">
+                    <div class="col-lg-2 font-weight-bold">Duration</div>
+                    <div class="col-lg-2 font-weight-bold">Institution</div>
+                    <div class="col-lg-8 font-weight-bold">Degree</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Duration: </span>2000-2005</div>
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Institution: </span>School 3</div>
+                <div class="col-lg-8"><span class="font-weight-bold" id="header_label">Degree: </span>Degree 3</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Duration: </span>2000-1995</div>
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Institution: </span>School 2</div>
+                <div class="col-lg-8"><span class="font-weight-bold" id="header_label">Degree: </span>Degree 2</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Duration: </span>1995-1990</div>
+                <div class="col-lg-2"><span class="font-weight-bold" id="header_label">Institution: </span>School 1</div>
+                <div class="col-lg-8"><span class="font-weight-bold" id="header_label">Degree: </span>Degree 1</div>
+            </div>
+            <h3>Skills</h3>
+            <div class="row">
+                <div class="col">Python</div>
+            </div>
+            <div class="row">
+                <div class="col">Linux</div>
+            </div>
         </div>
     </body>
 </html>
