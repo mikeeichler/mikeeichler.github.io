@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Subjects</title>
+        <link rel="stylesheet" href="grocery_list.css">
+    </head>
+    <body> 
+        <div class="content">
+            <h3>Grocery List</h3>
+            <!-- space to type the new item into, on hitting '+' or on enter it adds the item to the list -->
+            <div id="add_item">
+                <label for="new_item" id="add_new" onclick="add_item()">+</label>
+                <input class="in400" type="text" id="new_item" name="new_item"><br>
+            </div>
+            <div>
+            <!-- the grocery items will be added by javascript dynamically here -->
+                <ul id="list">
+
+                </ul>
+            
+            </div>
+        </div>
+        <script src="grocery_list.js"text/javascript"></script>
+    </body>
+</hmtl>
